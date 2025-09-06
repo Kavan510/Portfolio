@@ -1,4 +1,9 @@
+import { Navigate, useNavigate } from "react-router-dom"
+
 function Home() {
+
+  const navigate  =useNavigate();
+
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-50 text-gray-800 px-4">
       <div className="max-w-2xl text-center space-y-6">
@@ -11,12 +16,15 @@ function Home() {
         </p>
 
         <div className="flex flex-wrap justify-center gap-4 pt-4">
-          <button className="bg-blue-600 text-white px-6 py-3 rounded-2xl font-semibold shadow-md hover:bg-blue-700 transition cursor-pointer">
+          <button onClick={()=>navigate('/projects')} className="bg-blue-600 text-white px-6 py-3 rounded-2xl font-semibold shadow-md hover:bg-blue-700 transition cursor-pointer">
             My Professional Work
           </button>
-          <button className="bg-white border border-blue-600 text-blue-600 px-6 py-3 rounded-2xl font-semibold shadow-md hover:bg-blue-50 transition cursor-pointer" >
-            Download My CV
-          </button>
+          <a className="bg-white border border-blue-600 text-blue-600 px-6 py-3 rounded-2xl font-semibold shadow-md hover:bg-blue-50 transition cursor-pointer" 
+          href="https://drive.google.com/file/d/1gp0jNHw7R9iBZShu-8-LLK3zcGhcFbGN/view?usp=drive_link"
+          target="_blank"
+          >
+            View My CV
+          </a>
         </div>
       </div>
     </div>

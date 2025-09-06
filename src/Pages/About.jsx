@@ -4,13 +4,38 @@ function About() {
       
       {/* Left Section */}
       <div className="md:w-1/2 w-full p-6">
-        <h2 className="text-3xl font-bold text-gray-800 mb-4">Get to know me!!</h2>
-        <p className="text-gray-600 leading-relaxed">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-          Animi quas, et veniam debitis odio ex repudiandae ea amet, 
-          earum ab eaque, aut minima deserunt corporis maxime consectetur 
-          eligendi in. Itaque!
-        </p>
+        <h2 className="text-3xl font-bold text-gray-800 mb-6">Get to know me!!</h2>
+        
+        <div className="space-y-4 text-gray-600 leading-relaxed">
+          <p className="text-lg">
+            👋 Hey there, I’m <span className="font-semibold text-gray-800">Kavan Kansodariya</span>  
+          </p>
+          <p>
+            🎓 B.Tech student in <span className="font-medium">Information & Communication Technology</span> at  
+            <span className="font-semibold text-gray-800"> Dhirubhai Ambani University, Gandhinagar</span>.
+          </p>
+
+          {/* What I Do */}
+          <div>
+            <h3 className="text-xl font-semibold text-gray-700 mb-2">🚀 What I Do</h3>
+            <ul className="list-disc list-inside space-y-1">
+              <li>💡 Passionate about <span className="font-medium">Data Structures & Algorithms</span></li>
+              <li>📚 Strong foundation in <span className="font-medium">DBMS, OS, OOP, CN & Software Engineering</span></li>
+              <li>🛠️ Believe in a <span className="font-medium">project-based learning approach</span></li>
+              <li>💻 Built projects using <span className="font-medium">C++, DBMS, OOP & MERN stack</span></li>
+            </ul>
+          </div>
+
+          {/* Beyond Academics */}
+          <div>
+            <h3 className="text-xl font-semibold text-gray-700 mb-2">🌟 Beyond Academics</h3>
+            <ul className="list-disc list-inside space-y-1">
+              <li>🔎 Problem solver & continuous learner</li>
+              <li>🌍 Open to exploring real-world applications of tech</li>
+              <li>📂 Check out my <span className="font-medium">Projects section</span> for more!</li>
+            </ul>
+          </div>
+        </div>
       </div>
 
       {/* Right Section */}
@@ -21,6 +46,8 @@ function About() {
         <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 mb-6">
           {[
             "C++",
+            "Data Structures & Algorithms",
+            "Competitive Programming",
             "JavaScript",
             "Java",
             "React.js",
