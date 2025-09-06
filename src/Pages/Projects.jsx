@@ -30,7 +30,8 @@ function Projects() {
   ];
 
   return (
-    <div className="p-10 bg-gray-50 min-h-screen">
+    <div className="p-10 bg-gray-50 min-h-screen   bg-[radial-gradient(#dbeafe_1px,transparent_1px)] 
+                [background-size:20px_20px]">
       <h1 className="text-4xl font-bold text-gray-800 mb-8 text-center">
         Projects
       </h1>

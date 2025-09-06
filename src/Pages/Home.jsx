@@ -5,14 +5,17 @@ function Home() {
   const navigate  =useNavigate();
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-50 text-gray-800 px-4">
+<div className="flex flex-col items-center justify-center min-h-screen 
+                bg-gray-50 text-gray-800 px-4
+                bg-[radial-gradient(#dbeafe_1px,transparent_1px)] 
+                [background-size:20px_20px]">
+
       <div className="max-w-2xl text-center space-y-6">
         <h1 className="text-3xl md:text-4xl font-bold">
           Hi, this is <span className="text-blue-600">Kavan</span>
         </h1>
-        <p className="text-lg md:text-xl leading-relaxed text-gray-600">
-          DSA enthusiast & Development freak.  
-          A man who believes in <span className="font-medium">today or tomorrow</span> philosophy.
+        <p className="text-lg md:text-xl leading-relaxed text-gray-600"> 
+          A man who believes in <span className="font-medium">Today ||  Tomorrow</span> philosophy.
         </p>
 
         <div className="flex flex-wrap justify-center gap-4 pt-4">

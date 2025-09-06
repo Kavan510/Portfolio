@@ -1,6 +1,8 @@
 function About() {
   return (
-    <div className="flex flex-col md:flex-row justify-between items-start p-10 bg-gray-50 min-h-screen">
+    <div className="flex flex-col md:flex-row justify-between items-start p-10 bg-gray-50 min-h-screen 
+      bg-[radial-gradient(#dbeafe_1px,transparent_1px)] 
+                [background-size:20px_20px]">
       
       {/* Left Section */}
       <div className="md:w-1/2 w-full p-6">
@@ -46,10 +48,11 @@ function About() {
         <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 mb-6">
           {[
             "C++",
-            "Data Structures & Algorithms",
-            "Competitive Programming",
+            "DSA",
+            "CP",
             "JavaScript",
             "Java",
+            "SQL",
             "React.js",
             "Node.js",
             "MongoDB",

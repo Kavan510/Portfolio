@@ -1,9 +1,9 @@
 @import "tailwindcss";
 
 body{
-  font-family: "Outfit", sans-serif; /* Default clean font */
+  font-family: "Montserrat", sans-serif; /* Default clean font */
 }
 
 h1, h2, h3 {
-  font-family: "Story Script", cursive; /* Decorative headings */
+    font-family: "Montserrat", sans-serif;
 }
