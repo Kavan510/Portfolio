@@ -1,3 +1,7 @@
+import { SiLeetcode } from "react-icons/si";
+import { SiCodeforces } from "react-icons/si";
+import { FaGithub } from "react-icons/fa";
+
 function About() {
   return (
     <div className="flex flex-col md:flex-row justify-between items-start p-10 bg-gray-50 min-h-screen 
@@ -23,20 +27,49 @@ function About() {
             <ul className="list-disc list-inside space-y-1">
               <li>💡 Passionate about <span className="font-medium">Data Structures & Algorithms</span></li>
               <li>📚 Strong foundation in <span className="font-medium">DBMS, OS, OOP, CN & Software Engineering</span></li>
-              <li>🛠️ Believe in a <span className="font-medium">project-based learning approach</span></li>
               <li>💻 Built projects using <span className="font-medium">C++, DBMS, OOP & MERN stack</span></li>
+              <li>😊 Refer My CV for more.</li>
             </ul>
           </div>
 
-          {/* Beyond Academics */}
-          <div>
-            <h3 className="text-xl font-semibold text-gray-700 mb-2">🌟 Beyond Academics</h3>
-            <ul className="list-disc list-inside space-y-1">
-              <li>🔎 Problem solver & continuous learner</li>
-              <li>🌍 Open to exploring real-world applications of tech</li>
-              <li>📂 Check out my <span className="font-medium">Projects section</span> for more!</li>
-            </ul>
-          </div>
+          {/* Coding profiles */}
+         <div className="pt-6">
+  <h3 className="text-xl font-semibold text-gray-700 mb-2">🌟 Coding Profiles</h3>
+  <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 mb-6">
+    {[
+      {
+        Profile: "LeetCode",
+        Link: "https://leetcode.com/u/kavan07",
+        Icon:<SiLeetcode />
+      },
+      {
+         Profile:"Codeforces",
+        Link:"https://codeforces.com/profile/KK7",
+        Icon:<SiCodeforces />
+      },
+      {
+        Profile:"Github",
+        Link:"https://github.com/Kavan510",
+        Icon:<FaGithub/>
+      }
+    ].map((skill, index) => (
+     <a
+  href={skill.Link}
+  target="_blank"
+  rel="noopener noreferrer"
+  key={index}
+  className="flex items-center justify-center gap-2 px-4 py-2 bg-white shadow rounded-lg 
+             text-gray-700 font-medium border hover:bg-blue-100 
+             hover:scale-105 transition-transform duration-200"
+>
+  {skill.Icon}
+  <span>{skill.Profile}</span>
+</a>
+
+    ))}
+  </div>
+</div>
+
         </div>
       </div>
 

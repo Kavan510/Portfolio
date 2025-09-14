@@ -3,14 +3,20 @@ function Projects() {
     {
       title: "Doctor Appointment System",
       description:
-        "A full-stack MERN application to book and manage doctor appointments with authentication and real-time notifications.",
+        "A full-stack MERN application for managing doctor appointments with authentication, where patients can book consultations and doctors can manage their dashboards.",
       tech: ["React", "Node.js", "Express", "MongoDB"],
       link: "https://github.com/Kavan510/DocEasy",
     },
     {
+        title:"Online Course Selling site Backend",
+        description:"Backend system for an online course marketplace where users can purchase and access courses, and instructors can create and manage their offerings.",
+        tech: ["Node.js", "Express.js"],
+        link: "https://github.com/Kavan510/SkillNest",
+    },
+    {
       title: "Event_Hub",
       description:
-        "Event_Hub is event management system via which users can book movie and theatre shows seamlessly and pay fees online ",
+        "Event_Hub is a comprehensive event management system that allows users to seamlessly book movie and theatre shows and make secure online payments.",
       tech: ["DBMS","PostgreSQL"],
       link: "https://github.com/Kavan510/Event_Hub_DBMS",
     },
@@ -26,7 +32,8 @@ function Projects() {
         description:"Database management system using C++ file based system",
         tech: ["C++"],
         link: "https://github.com/Kavan510/DBMS-in-CPP",
-    }
+    },
+    
   ];
 
   return (
